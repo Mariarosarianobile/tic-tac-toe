@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #0061cf;
+}
+
+.titolo-principale {
+  color: pink;
+  text-align: center;
+}
+
+.square {
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: #fcfcfc;
+  cursor: pointer;
+  width: 96px;
+  height: 96px;
+
+  font-size: 40px;
+
+  transition: all 250ms ease;
+}
+
+.square:hover {
+  transform: scale(0.9);
+}
+
+.yellow {
+  border-color: red;
+  background-color: yellow;
+}
+
+.board {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+}
